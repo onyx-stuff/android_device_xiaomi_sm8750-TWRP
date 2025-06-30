@@ -12,5 +12,12 @@
 - [X] USB OTG
 - [X] Vibrator
 
+## Device Onyx Bugs
+
+-  Decryption
+-  Sideload
+-  USB OTG
+-  Vibrator
+
 ## Build it yourself
 * [YuKongA/platform_manifest_twrp_aosp](https://github.com/YuKongA/platform_manifest_twrp_aosp)
