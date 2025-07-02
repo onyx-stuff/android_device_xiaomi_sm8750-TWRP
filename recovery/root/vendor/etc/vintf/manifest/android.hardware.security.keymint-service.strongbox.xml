@@ -1,6 +1,6 @@
 <!--
     Input:
-        vendor/st/opensource/keymaster/keymint/3.0/hal/android.hardware.security.keymint-service.strongbox-thales.xml
+        vendor/st/opensource/keymaster/keymint/3.0/hal/android.hardware.security.keymint-service.strongbox.xml
 -->
 <manifest version="7.0" type="device">
     <hal format="aidl">
