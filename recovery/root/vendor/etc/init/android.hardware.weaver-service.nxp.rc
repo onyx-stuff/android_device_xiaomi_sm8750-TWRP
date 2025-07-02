@@ -1,7 +1,7 @@
 on init
-    start vendor.weaver_hal_service
+    start vendor.weaver_nxp
 
-service vendor.weaver_hal_service /vendor/bin/hw/android.hardware.weaver-service.thales
+service vendor.weaver_nxp /vendor/bin/hw/android.hardware.weaver-service.nxp-qti
     class hal
     user root
     group root drmrpc
