@@ -31,9 +31,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
-TARGET_BOARD_PLATFORM := xiaomi_sm8750
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno830
-QCOM_BOARD_PLATFORMS += xiaomi_sm8750
+TARGET_BOARD_PLATFORM := xiaomi_sm8735
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno825
+QCOM_BOARD_PLATFORMS += xiaomi_sm8735
 
 # Kernel
 TARGET_KERNEL_ARCH            := arm64
@@ -88,7 +88,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 # Dynamic Partition
 BOARD_SUPER_PARTITION_SIZE := 11811160064
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 11809841488
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 11806965760
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor vendor_dlkm odm
 
 # File systems
@@ -96,8 +96,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_sm8750
-TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_sm8750
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_sm8735
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_sm8735
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # TWRP specific build flags
@@ -168,8 +168,8 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_SCREEN_BLANK_ON_BOOT := true
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko synaptics_tcm2.ko qti_battery_charger.ko nt38771_touch.ko nxp-nci.ko stm_st54se_gpio.ko stm_nfc_i2c.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt38771_touch.ko nxp-nci.ko stm_st54se_gpio.ko stm_nfc_i2c.ko"
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp" # CPU-0-0-0
 TW_BACKUP_EXCLUSIONS := /data/fonts
-TW_DEVICE_VERSION := $(TW_RELEASE_PRODUCT_NAME)-A15
+TW_DEVICE_VERSION := POCO_F7-Byben

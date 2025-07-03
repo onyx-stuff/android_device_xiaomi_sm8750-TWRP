@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sm8750
+DEVICE_PATH := device/xiaomi/onyx
 
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
@@ -13,7 +13,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 PRODUCT_RELEASE_NAME := onyx
 
 ## Device identifier
-PRODUCT_DEVICE := sm8750
+PRODUCT_DEVICE := onyx
 PRODUCT_NAME := twrp_onyx
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 25053PC47G

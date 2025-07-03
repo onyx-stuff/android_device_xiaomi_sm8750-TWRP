@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sm8750)
+ifeq ($(TARGET_DEVICE),onyx)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
