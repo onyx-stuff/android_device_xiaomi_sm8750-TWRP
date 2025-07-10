@@ -4,19 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/dada
+DEVICE_PATH := device/xiaomi/onyx
 
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := dada
+PRODUCT_RELEASE_NAME := onyx
 
 ## Device identifier
-PRODUCT_DEVICE := dada
-PRODUCT_NAME := twrp_dada
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi 15
+PRODUCT_DEVICE := onyx
+PRODUCT_NAME := twrp_onyx
+PRODUCT_BRAND := POCO
+PRODUCT_MODEL := 25053PC47G
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Assert
